@@ -4,23 +4,23 @@ const keys = calculator.querySelector('.calculator_keys')
 
 const add = (a, b) => {
     let answer = parseFloat(a) + parseFloat(b);
-    return answer.toFixed(3);
+    return answer.toFixed(5);
 }
 
 const subtract = (a, b) => {
     let answer = parseFloat(a) - parseFloat(b);
-    return answer.toFixed(3);
+    return answer.toFixed(5);
 }
 
 const multiply = (a, b) => {
     let answer = parseFloat(a) * parseFloat(b);
-    return answer.toFixed(3);
+    return answer.toFixed(5);
 }
 
 const divide = (a, b) => {
     if (b > 0) {
         let answer = parseFloat(a) / parseFloat(b);        
-        return answer.toFixed(3);
+        return answer.toFixed(5);
     }
     else {
         return("Lol! Mathematical oopsie");
